@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa con Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.control.scale@1.1.0/dist/leaflet.control.scale.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol@0.82.0/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.pm@5.2.4/dist/leaflet.pm.min.css" />
+    <link rel="stylesheet" href="path_to/leaflet-magnifying-glass.css" />
+    <script src="path_to/leaflet-magnifying-glass.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #map { height: 400px; }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <h1>GeoVisor de parques de la comuna 19 en Santiago de Cali</h1>
+    </header>
+    
+    <main class="content">
+        <div id="map" style="width: 100%; height: 600px;"></div> <!-- Solo dejamos un div con id 'map' -->
+        <aside class="info-box">
+            <h2>Tematicas identificadas</h2>
+            <br><br>
+            <p>Reciclaje: Residuos sólidos: Bodegas de reciclaje.</p>
+            <br>
+            <p>Ruido: Ruido en fin de semana en horario diurno.</p>
+            <br>
+            <p>Residuos solidos:Puntos críticos de residuos solidos.</p>
+            <br><br>
+            <h2>Otros atributos</h2>
+            <br><br>
+            <p>Mapa de calor: Se identifica en que sector de la comuna hay mayor presencia de parques.</p>
+            <br>
+            <p>Sitios: Parques principales de la comuna 19.</p>
+            <br>
+            <p>Cuadricula: Coordenadas en Latitud, Longitud.</p>
+        </aside>
+    </main>
+
+    <aside class="info-box2">
+        <button id="toggleHeatmap">Mostrar/Ocultar Mapa de Calor</button>
+    </aside>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+    <script src="https://unpkg.com/leaflet.locatecontrol/dist/L.Control.Locate.min.js"></script>
+    <script src="JavaScript.js"></script>
+    
+    
+    <footer>
+        <h3>&copy; 2023 GeoVisor Cali</h3>
+    </footer>
+</body>
+</html>
+
+
+

@@ -1,0 +1,107 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(179, 36, 36);
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: row; /* Esto asegura que los elementos se alineen horizontalmente */
+    align-items: stretch; /* Esto hará que el info-box se estire al mismo alto que el mapa */
+}
+
+
+.map-container {
+    flex: 1 1 70%; /* Ajustamos para que el mapa ocupe más espacio */
+    height: 600px; /* Mantenemos la altura del visor de mapas */
+}
+
+.info-box {
+    width: 30%; /* Aseguramos que el info-box ocupe el espacio restante */
+    background-color: black;
+    padding: 20px;
+    overflow-y: auto; /* Agrega scroll si el contenido es muy largo */
+}
+
+.info-box h2{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box p{
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+}
+
+p::before {
+    content: "• "; /* Añade un punto como prefijo al texto del párrafo */
+    padding-right: 5px; /* Añade un pequeño espacio después del punto */
+}
+
+.info-box2 {
+    background-color: #f4f4f400;
+    display: flex; /* Utiliza flexbox para centrar elementos dentro */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
+
+
+
+/* Asegura que la caja de información esté debajo del mapa en pantallas pequeñas */
+@media (max-width: 800px) {
+    .content {
+        flex-direction: column; /* Los elementos se apilan verticalmente en pantallas pequeñas */
+    }
+    .map-container, .info-box {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    }
+    .info-box2 {
+        order: 1; /* Este vendrá justo después del mapa */
+    }
+
+    .info-box {
+        order: 2; /* Aseguramos que el info-box esté debajo del mapa y del info-box2 */
+    }
+    
+}
+
+
+#toggleHeatmap {
+    background: #ff000d; /* Color rojo característico de Netflix */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none; /* Eliminar el resalte del borde al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+#toggleHeatmap:hover {
+    background: #F40612; /* Un rojo un poco más claro para el hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada en hover */
+}
+
+#toggleHeatmap:active {
+    transform: translateY(2px); /* Efecto de presión al hacer clic */
+}

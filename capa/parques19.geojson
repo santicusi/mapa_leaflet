@@ -1,0 +1,19 @@
+{
+"type": "FeatureCollection",
+"name": "parques19",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "Nombre": "Parque Banderas" }, "geometry": { "type": "Point", "coordinates": [ -76.542421384670007, 3.431781239285287 ] } },
+{ "type": "Feature", "properties": { "id": 2, "Nombre": "Parque del Perro" }, "geometry": { "type": "Point", "coordinates": [ -76.545527945165986, 3.435867977655651 ] } },
+{ "type": "Feature", "properties": { "id": 3, "Nombre": "Parque de la piedra" }, "geometry": { "type": "Point", "coordinates": [ -76.547069512653522, 3.436669917860069 ] } },
+{ "type": "Feature", "properties": { "id": 4, "Nombre": "Parque la 85" }, "geometry": { "type": "Point", "coordinates": [ -76.538835237759244, 3.430301787705381 ] } },
+{ "type": "Feature", "properties": { "id": 5, "Nombre": "Parque San fernando nuevo" }, "geometry": { "type": "Point", "coordinates": [ -76.542768176487002, 3.42531548147223 ] } },
+{ "type": "Feature", "properties": { "id": 6, "Nombre": "Parque Pampalinda" }, "geometry": { "type": "Point", "coordinates": [ -76.551978953968984, 3.405736047344379 ] } },
+{ "type": "Feature", "properties": { "id": 7, "Nombre": "Parque Pampalinda 2" }, "geometry": { "type": "Point", "coordinates": [ -76.552385999375772, 3.402837223974417 ] } },
+{ "type": "Feature", "properties": { "id": 8, "Nombre": "Parque central El Refugio" }, "geometry": { "type": "Point", "coordinates": [ -76.549267151461578, 3.396506017714786 ] } },
+{ "type": "Feature", "properties": { "id": 9, "Nombre": "Parque San Fernando viejo" }, "geometry": { "type": "Point", "coordinates": [ -76.54584301949231, 3.437568098277903 ] } },
+{ "type": "Feature", "properties": { "id": 10, "Nombre": "Parque Mortiñal" }, "geometry": { "type": "Point", "coordinates": [ -76.551570533408807, 3.440915221656692 ] } },
+{ "type": "Feature", "properties": { "id": 11, "Nombre": "River view Park" }, "geometry": { "type": "Point", "coordinates": [ -76.549154388882712, 3.416293100006237 ] } },
+{ "type": "Feature", "properties": { "id": 12, "Nombre": "Parque las palmas tejares" }, "geometry": { "type": "Point", "coordinates": [ -76.546354576557661, 3.440077753235297 ] } }
+]
+}
